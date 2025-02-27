@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <form id="survey-form">
+      <h1 id="title">Survey Form</h1>
+  <p id="description"> Thank you for deciding to adopt one of our kittens!</p>
+    <fieldset>    
+    <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+    <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required/></label>
+    </fieldset>
+
+    <fieldset>
+    <label id="number-label">Age: </label>
+      <input id="number" type="number" min="13" max="120" placeholder="Select your age" required/>
+    <label> Type of house:
+    <select id="dropdown">
+      <option>Apartment</option>
+      <option>Condo</option>
+      <option>House</option>
+      <option>Mobile home</option>
+      <option>Tiny home</option>
+    </select>
+    </label>
+    </fieldset>
+
+    <fieldset>
+    <label>Why do you want to adopt a cat?</label>
+    <label><input type="radio" value="company" name="user-recommended" class="inline"/>Company</label>
+    <label><input type="radio" value="therapy" name="user-recommended" class="inline"/>Therapy</label>
+    <label><input type="radio" value="other" name="user-recommended" class="inline"/>Other</label>
+    </fieldset>
+
+    <fieldset>
+    <label>What type of cat do you prefer?</label>
+    <label><input type="checkbox" value="pedigree" class="inline"/>Pedigree</label>
+    <label><input type="checkbox" value="non-pedigree" class="inline"/>Non-pedigree</label>
+
+    <fieldset>
+    <label>Please describe your ideal cat:  
+    <textarea placeholder="Cat description"></textarea>
+    </fieldset>
+    <input id="submit" type="submit" />
+  </form>
+
+</body>
+
+</html>

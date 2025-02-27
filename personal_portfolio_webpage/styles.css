@@ -1,0 +1,143 @@
+/* GLOBAL */
+
+* {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #202124;
+    color: #ffffff;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    width: 100%;
+  
+  }
+  
+  .navbar a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar a:hover {
+    background-color: #999da6;
+    color: #202124;
+  }
+  
+  /* .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+  
+  /* WELCOME-SECTION */
+  
+  #welcome-section {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .center-div h1 {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  }
+  
+  .center-div p {
+    font-size: 2rem;
+  }
+  
+  /* PROJECTS-SECTION */
+  
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-tile p{
+    font-size: 2rem;
+  }
+  
+  /* CONTACT-SECTION */
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  
+  #contact p{
+    font-size: 2rem;
+    
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* FOOTER */
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  /* Queries */
+  
+  @media only screen and (min-width: 240px) {
+    * {
+      width: 100%;
+    }
+  
+    .center-div h1 {
+    font-size: 2rem;
+    text-align: center;
+    }
+  
+    .center-div p {
+    font-size: 1rem;
+    text-align: center;
+    }
+  
+    .project-tile p {
+      font-size: 2rem;
+    text-align: center;
+    }
+  
+    .project-tile img {
+      width: 200px;
+      height: 100px;
+    }
+  
+    #contact p {
+      font-size: 2rem;
+    text-align: center;
+    }
+  
+    .contact-icons {
+      text-align: center;
+    }
+  }
+  

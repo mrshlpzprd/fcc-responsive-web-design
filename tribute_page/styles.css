@@ -1,0 +1,58 @@
+p {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 18;
+  display: block;
+}
+
+h1 {
+  padding: 10px;
+  border: no-border;
+  margin: 0;
+  background-color: #E8D9DF; 
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+figcaption {
+  font-family: Tahoma;
+  font-size: 15px;
+  padding: 2px;
+  text-align: center;
+
+}
+
+body {
+  background-color: rgb(245,245,220);
+  font-family: Tahoma;
+  font-size: 15;
+  line-height: 1.5;
+}
+
+li {
+  margin: 15 0 15 0;
+}
+
+a:link {
+  color:#967bb6;
+}
+
+a:visited {
+  color:gray;
+}
+
+a:hover {
+  color: #0981D1;
+}
+
+a:active {
+  color: #967bb6;
+}
