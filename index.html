@@ -7,69 +7,86 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
             line-height: 1.6;
+            background-color: #f8f8f8;
         }
         h1 {
             text-align: center;
+            margin-bottom: 10px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .certificate {
+            text-align: center;
+            margin-bottom: 40px;
         }
-        li {
-            margin: 15px 0;
-        }
-        a {
+        .certificate a {
             text-decoration: none;
             color: #0366d6;
             font-weight: bold;
         }
-        a:hover {
-            text-decoration: underline;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
-        .certificate {
-            display: block;
-            margin: 20px 0;
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
             text-align: center;
         }
-        .project-screenshot {
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        .card a {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #0366d6;
+        }
+        .card img {
             max-width: 100%;
-            border: 1px solid #ccc;
-            margin-top: 5px;
+            border-radius: 6px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <h1>My FreeCodeCamp Responsive Web Design Projects</h1>
-
-    <p class="certificate">
+    <div class="certificate">
         Certificate: 
-        <a href="https://www.freecodecamp.org/certification/yourusername/responsive-web-design" target="_blank">
+        <a href="https://www.freecodecamp.org/certification/mrshlpzprd/responsive-web-design" target="_blank">
             View Certificate
         </a>
-    </p>
+    </div>
 
-    <ul>
-        <li>
+    <div class="grid">
+        <div class="card">
             <a href="tribute_page/" target="_blank">Tribute Page</a>
-            <!-- Optional screenshot -->
-            <!-- <img src="assets/tribute_screenshot.png" alt="Tribute Page Screenshot" class="project-screenshot"> -->
-        </li>
-        <li>
+            <img src="assets/tribute_screenshot.png" alt="Tribute Page Screenshot">
+        </div>
+        <div class="card">
             <a href="survey_form/" target="_blank">Survey Form</a>
-            <!-- <img src="assets/survey_screenshot.png" alt="Survey Form Screenshot" class="project-screenshot"> -->
-        </li>
-        <li>
+            <img src="assets/survey_screenshot.png" alt="Survey Form Screenshot">
+        </div>
+        <div class="card">
             <a href="product_landing_page/" target="_blank">Product Landing Page</a>
-            <!-- <img src="assets/product_screenshot.png" alt="Product Landing Page Screenshot" class="project-screenshot"> -->
-        </li>
-        <li>
+            <img src="assets/product_screenshot.png" alt="Product Landing Page Screenshot">
+        </div>
+        <div class="card">
             <a href="technical_documentation_page/" target="_blank">Technical Documentation Page</a>
-            <!-- <img src="assets/documentation_screenshot.png" alt="Technical Documentation Screenshot" class="project-screenshot"> -->
-        </li>
-        <li>
+            <img src="assets/documentation_screenshot.png" alt="Technical Documentation Screenshot">
+        </div>
+        <div class="card">
             <a href="personal_portfolio_webpage/" target="_blank">Portfolio Webpage</a>
-            <!-- <i
+            <img src="assets/portfolio_screenshot.png" alt="Portfolio Webpage Screenshot">
+        </div>
+    </div>
+</body>
+</html>
